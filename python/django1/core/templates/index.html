@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="../static/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Grão Bonito</title>
+    <link rel="icon" type="image/x-icon" href="../static/images/icon.ico">
+    <img class="banner" src="../static/images/banner-site.jpg">
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'index2' %}">Produtos</a>
+            <ul style="z-index: 9900; padding:-1px; margin-left: 6px;">
+                    <li style="width:50%"><a href="{% url 'index2' %}">Frutas</a></li>
+                    <li style="width:50%"><a href="{% url 'index2' %}">Verduras</a></li>
+                    <li style="width:50%"><a href="{% url 'index2' %}">Grãos</a></li>
+                    <li style="width:50%"><a href="{% url 'index2' %}">Bebidas</a></li>
+                </ul>
+            </li>
+        <li><a href="{% url 'carrinho' %}">Carrinho</a></li>
+        <li><a href="{% url 'sobre' %}">Sobre nós</a></li>
+</ul>
+</nav>
+<img src="../static/images/boasvindas.png" style="width: 60%; margin-bottom: -740px; margin-left:260px;">  
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="../static/images/slide1.png" style="width: 100%; opacity: 0.3;">
+    </div>
+  
+    <div class="mySlides">
+        <img src="../static/images/slide2.jpg" style="width:100%; opacity: 0.3;">
+    </div>
+  
+    <div class="mySlides">
+        <img src="../static/images/slide3.jpg" style="width:100%; opacity: 0.3;">
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">© 2022-2023 Grão Bonito</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="https://www.tiktok.com/@felipe_sanches_nf/video/6981183798331428101?is_copy_url=1&is_from_webapp=v1"target="_blank">Privacidade</a></li>
+        <li class="list-inline-item"><a href="https://www.tiktok.com/@felipe_sanches_nf/video/6827246531293252869?is_copy_url=1&is_from_webapp=v1"target="_blank">Termos</a></li>
+        <li class="list-inline-item"><a href="https://www.tiktok.com/@felipe_sanches_nf/video/6827245445132193029?is_copy_url=1&is_from_webapp=v1"target="_blank">Suporte</a></li>
+    </ul>
+    <script src="../static/js/script.js"></script>
+  </footer>
+</body>
+</html>
